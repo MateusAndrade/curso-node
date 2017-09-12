@@ -1,16 +1,13 @@
 const express = require('express');
 const app = express();
 
-//seta a engien de views do express;
+//seta a engine de views do express;
 app.set('view engine','ejs');
 
-app.get("/", function(req,res){
-    res.send("Home!");
-});
+app.use(express.static(__dirname + '/public'));
 
-app.get('/tecnologia', function(req,res){
-    //configura o express para renderizar a view
-    res.render('secao/tecnologia');
+app.get("/", function(req,res){
+    res.render("index");
 });
 
 //função executada ao subir o servidor

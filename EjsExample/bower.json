@@ -1,0 +1,17 @@
+{
+  "name": "ejs_example",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Mateus Andrade <mateus.andrade47@outlook.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/MateusAndrade/curso-node",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
